@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <script>
+
+var settings = {
+  "url": "https://api.sosinventory.com/api/v2/shipment",
+  "method": "POST",
+  "timeout": 0,
+  "headers": {
+    "Content-Type": "application/x-www-form-urlencoded",
+    "Host": "api.sosinventory.com",
+    "Authorization": "Bearer _p_C1C_IAVRdCyGAJxYsZ2gD2NaJ5h3pwWTre23t9olqwi3SpS45HATP3bGf5Rup4XbC2Lg8caOrW9h2pMxm-WPku0N0HjU5Fn-NGyY6VgqgKRFKZe6zoyAsUmLicaSBFregGRZF9uvk5hehizKLs2B9FhORYXTFMmz7LAW6yW-IVuttirLHgek-T4VScEtheaHKyKx0Q7rgjuDsX6EL7L2MCI1ybMIjqVJUDYOAx5-d5WCdwkEyWqhZ-pWIhYEkAmf8xb8ZiXrQWKX5IsMqxIJrttUWFPh3y25WoPDPKXO1bxOI",
+    "Cookie": "ARRAffinity=e81fdc6ba350a5d391684e8a00ce9d8d0c39cc9c99bfa5f795f1331dba9fe0f6; ARRAffinitySameSite=e81fdc6ba350a5d391684e8a00ce9d8d0c39cc9c99bfa5f795f1331dba9fe0f6"
+  },
+  "data": [
+        {       
+            "starred": 0,
+            "syncToken": 0,
+            "number": "SO-11",
+            "date": "2021-12-11T04:00:00",
+            "customer": {
+                "id": 81,
+                "name": "gee"
+            },
+            "location": {
+                "id": 1,
+                "name": "Default"
+            },
+            "billing": {
+                "company": null,
+                "contact": null,
+                "phone": null,
+                "email": null,
+                "addressName": "",
+                "addressType": "",
+                "address": {
+                    "line1": null,
+                    "line2": null,
+                    "line3": null,
+                    "line4": null,
+                    "line5": null,
+                    "city": null,
+                    "stateProvince": null,
+                    "postalCode": null,
+                    "country": null
+                }
+            },
+            "shipping": {
+                "company": null,
+                "contact": null,
+                "phone": null,
+                "email": null,
+                "addressName": "",
+                "addressType": "",
+                "address": {
+                    "line1": null,
+                    "line2": null,
+                    "line3": null,
+                    "line4": null,
+                    "line5": null,
+                    "city": null,
+                    "stateProvince": null,
+                    "postalCode": null,
+                    "country": null
+                }
+            },
+            "channel": null,
+            "department": null,
+            "priority": null,
+            "assignedToUser": null,
+            "shippingMethod": null,
+            "trackingNumber": null,
+            "linkedTransaction": null,
+            "customerMessage": null,
+            "comment": null,
+            "customerNotes": null,
+            "customFields": null,
+            "customerPO": null,
+            "shipBy": "",
+            "shippingAmount": 0.00000,
+            "total": 0.0,
+            "forceToShipStation": false,
+            "archived": false,
+            "summaryOnly": false,
+            "hasSignature": false,
+            "trackingLink": "",
+            "keys": null,
+            "values": null,
+            "lines": [
+                {
+                    "id": 2,
+                    "lineNumber": 1,
+                    "item": {
+                        "id": 208,
+                        "name": "KF94 FACE MASK"
+                    },
+                    "class": null,
+                    "job": null,
+                    "workcenter": null,
+                    "tax": null,
+                    "linkedTransaction": null,
+                    "description": null,
+                    "quantity": 1.000,
+                    "weight": 0.0000000000,
+                    "volume": 0.0000000000,
+                    "weightunit": "lb",
+                    "volumeunit": "cbm",
+                    "unitprice": 0.0,
+                    "amount": 0.0,
+                    "altAmount": 0.0,
+                    "picked": 0.0,
+                    "shipped": 0.0,
+                    "invoiced": 0.0,
+                    "produced": 0.0,
+                    "returned": 0.0,
+                    "cost": null,
+                    "margin": null,
+                    "listPrice": null,
+                    "percentdiscount": null,
+                    "duedate": "",
+                    "uom": null,
+                    "bin": null,
+                    "lot": null,
+                    "serials": []
+                }
+            ]
+        }
+
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+}};
+
+    </script>
+</body>
